@@ -107,7 +107,7 @@ jobs:
                 git checkout -b $BRANCH_NAME
               fi
 
-              git add changelog_data/data
+              git add changelog_data/
 
               if git diff-index --quiet HEAD --; then
                 echo "No changes to commit, file already exists in the branch."
